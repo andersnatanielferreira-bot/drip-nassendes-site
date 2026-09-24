@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Versão do logo para fundo escuro (transição de página) — cor branca -->
+
+  <!-- Hanger Hook -->
+  <path d="M 250 80 C 230 80 220 95 220 115 C 220 145 250 155 250 185"
+        stroke="#ffffff" stroke-width="14" stroke-linecap="round" fill="none" />
+
+  <!-- Hanger Triangle Body -->
+  <path d="M 250 185 L 50 320 C 40 328 45 345 60 345 L 440 345 C 455 345 460 328 450 320 Z"
+        stroke="#ffffff" stroke-width="14" stroke-linejoin="round" fill="none" />
+
+  <!-- D -->
+  <path d="M 125 225 L 155 225 C 190 225 205 250 205 285 C 205 320 190 345 155 345 L 125 345 Z
+           M 152 255 L 148 255 L 148 315 L 152 315 C 170 315 178 303 178 285 C 178 267 170 255 152 255 Z"
+        fill="#ffffff" stroke="none" />
+
+  <!-- r -->
+  <path d="M 215 250 L 238 250 L 238 268 C 245 254 256 248 268 248 C 274 248 278 250 282 252 L 275 278 C 270 276 265 275 260 275 C 248 275 238 285 238 302 L 238 345 L 215 345 Z"
+        fill="#ffffff" stroke="none" />
+
+  <!-- i -->
+  <circle cx="300" cy="235" r="14" fill="#ffffff" stroke="none" />
+  <path d="M 288 252 L 312 252 L 312 345 L 288 345 Z" fill="#ffffff" stroke="none" />
+
+  <!-- p -->
+  <path d="M 325 252 L 348 252 L 348 266 C 356 254 368 248 382 248 C 408 248 424 270 424 298 C 424 326 408 348 382 348 C 368 348 356 342 348 330 L 348 395 L 325 395 Z
+           M 372 272 C 358 272 348 283 348 298 C 348 313 358 324 372 324 C 388 324 398 313 398 298 C 398 283 388 272 372 272 Z"
+        fill="#ffffff" stroke="none" />
+
+  <!-- NASSENDES -->
+  <text x="250" y="420"
+        text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="28" font-weight="600" letter-spacing="8"
+        fill="#c4993e" stroke="none">NASSENDES</text>
+</svg>
