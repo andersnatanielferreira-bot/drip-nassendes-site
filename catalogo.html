@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Vídeos — Drip Nassendes · Luanda</title>
+  <meta name="description" content="Catálogo oficial de vídeos da Drip Nassendes. Coleções Prada, Loro Piana, Lacoste e Polo Ralph Lauren disponíveis em Luanda. WhatsApp: 958 438 590." />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="stylesheet" href="css/resn.css" />
+</head>
+<body>
+
+  <!-- Cursor (desktop) -->
+  <div class="resn-cursor-dot"></div>
+  <div class="resn-cursor-ring"></div>
+
+  <!-- Ambient -->
+  <div class="resn-ambient-fx"></div>
+  <div class="resn-grid-lines"></div>
+
+  <!-- Header -->
+  <header class="resn-header">
+    <a href="index.html" class="resn-brand-wrap">
+      <img src="assets/logo.svg" class="resn-logo-icon" alt="Logo Drip Nassendes" />
+      <div class="resn-brand-text">
+        <span class="resn-brand-name">Drip Nassendes</span>
+        <span class="resn-brand-meta">Luanda, Angola // Old Money</span>
+      </div>
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <ul class="resn-nav-list">
+        <li><a href="index.html"    class="resn-nav-item">01 Início</a></li>
+        <li><a href="catalogo.html" class="resn-nav-item active">02 Catálogo</a></li>
+        <li><a href="tiktok.html"   class="resn-nav-item">03 Redes Sociais</a></li>
+      </ul>
+    </nav>
+
+    <div class="resn-header-meta">
+      <button id="sound-toggle-btn" class="resn-sound-btn" type="button" title="Ativar/Desativar Som">
+        <div class="sound-wave-bars">
+          <span class="sound-bar"></span>
+          <span class="sound-bar"></span>
+          <span class="sound-bar"></span>
+        </div>
+        <span>AUDIO [ ON ]</span>
+      </button>
+
+      <a href="https://wa.me/244958438590?text=Ol%C3%A1%20Drip%20Nassendes!%20Estou%20a%20ver%20o%20cat%C3%A1logo%20e%20gostaria%20de%20consultar%20uma%20pe%C3%A7a." target="_blank" rel="noopener" class="btn-resn-ghost" style="padding: 0.5rem 1.2rem; font-size: 0.72rem;">
+        WhatsApp
+      </a>
+    </div>
+
+    <button class="resn-mobile-menu-btn" aria-label="Menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="resn-mobile-nav" aria-label="Menu mobile">
+    <a href="index.html">01 Início</a>
+    <a href="catalogo.html">02 Catálogo</a>
+    <a href="tiktok.html">03 Redes</a>
+    <a href="https://wa.me/244958438590" target="_blank" rel="noopener" style="color: #c4993e;">WhatsApp ↗</a>
+  </nav>
+
+  <!-- ========================================================
+       CATÁLOGO
+       ======================================================== -->
+  <main class="resn-main-viewport">
+
+    <div class="resn-hero-meta-row reveal">
+      <span>[ CATÁLOGO // 4 VÍDEOS EXCLUSIVOS ]</span>
+      <span>LUANDA, ANGOLA // DRIP NASSENDES</span>
+      <span>[ WHATSAPP: 958 438 590 ]</span>
+    </div>
+
+    <!-- Marquee -->
+    <div class="resn-marquee-wrap" aria-hidden="true">
+      <div class="resn-marquee-track">
+        <span class="resn-marquee-item"><span class="resn-marquee-dot"></span> PRADA <span class="resn-marquee-dot"></span> LORO PIANA <span class="resn-marquee-dot"></span> LACOSTE <span class="resn-marquee-dot"></span> POLO RALPH LAUREN <span class="resn-marquee-dot"></span> COLEÇÕES 2026 <span class="resn-marquee-dot"></span> LUANDA <span class="resn-marquee-dot"></span> OLD MONEY <span class="resn-marquee-dot"></span> QUIET LUXURY <span class="resn-marquee-dot"></span></span>
+      </div>
+    </div>
+
+    <!-- Header da secção -->
+    <div class="catalog-section-header">
+      <div>
+        <h1 class="resn-hero-giant-title reveal" style="font-size: clamp(2.8rem, 6vw, 5.5rem); margin-bottom: 0.5rem;">
+          Catálogo <em>Vídeos</em>
+        </h1>
+        <p class="catalog-section-sub reveal reveal-d2">
+          Toque num vídeo para assistir e encomendar via WhatsApp
+        </p>
+      </div>
+
+      <a href="https://wa.me/244958438590?text=Ol%C3%A1%20Drip%20Nassendes!" target="_blank" rel="noopener" class="btn-resn-primary reveal reveal-d3" style="align-self: flex-end;">
+        <span>Encomendar Agora</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Grid dos Vídeos — preenchida pelo JS -->
+    <div class="resn-video-catalog-grid" id="resn-video-catalog-grid"></div>
+
+  </main>
+
+  <!-- Modal do Vídeo -->
+  <div id="resn-video-modal" class="resn-video-modal" role="dialog" aria-modal="true" aria-label="Vídeo Drip Nassendes">
+    <div class="resn-modal-container">
+      <button id="resn-modal-close" class="resn-modal-close" type="button" aria-label="Fechar">×</button>
+
+      <!-- JS injeta <video> aqui -->
+      <div class="modal-media-pane" id="modal-media-pane"></div>
+
+      <div class="modal-info-pane">
+        <div class="modal-whatsapp-banner">
+          <span class="modal-banner-icon">🛎️</span>
+          <div>
+            <div class="modal-banner-title">Interessado nesta peça?</div>
+            <p class="modal-banner-text">
+              Contacta a <strong>Drip Nassendes</strong> pelo WhatsApp <strong>958 438 590</strong> para encomendar, consultar tamanhos e preços!
+            </p>
+          </div>
+        </div>
+
+        <span id="modal-video-brand" class="modal-video-brand"></span>
+        <h2 id="modal-video-title" class="modal-video-title"></h2>
+        <p  id="modal-video-desc"  class="modal-video-desc"></p>
+
+        <a id="modal-whatsapp-lead-btn" href="#" target="_blank" rel="noopener" class="btn-whatsapp-order-big">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.777.818 2.791.818 3.18 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.767-5.767-5.767zm0 13.064c-.957 0-1.897-.253-2.718-.731l-3.033.795.809-2.956c-.524-.868-.801-1.868-.801-2.91 0-4.004 3.259-7.263 7.265-7.263 4.008 0 7.266 3.259 7.266 7.264 0 4.005-3.258 7.265-7.265 7.265z"/>
+          </svg>
+          <span>Encomendar via WhatsApp (958 438 590)</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="resn-footer">
+    <span class="resn-footer-copy">© 2026 DRIP NASSENDES · LUANDA, ANGOLA</span>
+    <div class="resn-footer-links">
+      <a href="index.html"    class="resn-footer-a">[ INÍCIO ]</a>
+      <a href="catalogo.html" class="resn-footer-a">[ CATÁLOGO ]</a>
+      <a href="tiktok.html"   class="resn-footer-a">[ REDES ]</a>
+      <a href="https://wa.me/244958438590" target="_blank" rel="noopener" class="resn-footer-a">[ WHATSAPP ]</a>
+    </div>
+  </footer>
+
+  <script src="js/resn-engine.js"></script>
+</body>
+</html>
